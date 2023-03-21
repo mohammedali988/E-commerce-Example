@@ -1,10 +1,10 @@
 body {
   margin: 0;
   font-family: inter, sans-serif;
-  background-color: rgba(0, 6, 16, 0.918);
+  background-color: rgb(20 20 32);
   margin: 0;
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }

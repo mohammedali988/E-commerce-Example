@@ -4,27 +4,20 @@ import styled from "styled-components";
 import Typo from "../Typography";
 
 const BobUpSubMenu = ({ SubMenuItems }) => {
-//   console.log(SubMenuItems, "here is the submenu");
   return (
-    <>
-      <Container>
-        {SubMenuItems?.map((e, i) => {
-          return (
-            <SubMenuOption key={i}>
-              <Link to={e.to} style={{ textDecoration: "none" }}>
-                <Typo
-                  pointer={true}
-                  fontSize={"16px !important"}
-                  color={"white"}
-                >
-                  {e.title}
-                </Typo>
-              </Link>
-            </SubMenuOption>
-          );
-        })}
-      </Container>
-    </>
+    <Container>
+      {SubMenuItems?.map((e, i) => {
+        return (
+          <SubMenuOption key={i}>
+            <Link to={e.to} style={{ textDecoration: "none" }}>
+              <Typo pointer={true} fontSize={"16px !important"} color={"white"}>
+                {e.title}
+              </Typo>
+            </Link>
+          </SubMenuOption>
+        );
+      })}
+    </Container>
   );
 };
 
@@ -35,12 +28,13 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   padding: 10px 25px;
-  border-radius: 10px;
+  border-radius: 0.375rem;
   background-color: rgb(29 33 68);
   height: fit-content;
-  width: 200px;
+  width: 250px;
   position: absolute;
   top: 70px;
+  z-index: 1000;
 `;
 
 const SubMenuOption = styled.div`

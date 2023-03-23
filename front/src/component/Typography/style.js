@@ -20,15 +20,15 @@ const getTypoSize = (variant) => {
 };
 
 export const Wrapper = styled.p`
-  font-weight: ${(props) =>
-    props?.bold || props?.variant === "h2" ? 750 : 500};
+  font-weight: ${({ weight }) => weight || "500"};
   color: ${(props) =>
     props ? props.color : props.theme ? props.theme.Typography.color : "white"};
   font-size: ${(props) => props?.fontSize || getTypoSize(props?.variant || "")};
-  line-height: ${(props) => (props?.bold ? 1.1 : 1.25)};
+  line-height: ${({ height }) => height || ""};
   font-family: ${(props) => props?.["font-family"] || "inter,sans-serif"};
   font-size: ${(props) =>
     props?.["font-Size"] || getTypoSize(props?.variant || "")};
   text-align: ${(props) => props?.["text-align"] || "left"};
   cursor: ${({ pointer }) => (pointer ? "pointer" : "")};
+  opacity: ${({ opacity }) => opacity || "1"};
 `;

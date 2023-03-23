@@ -7,14 +7,13 @@ export const NavContainer = styled.div`
   justify-content: center;
   width: 100%;
   height: 70px;
-  padding: 10px;
   position: ${({ scrolled }) => (scrolled ? "fixed" : "none")};
   top: ${({ scrolled }) => (scrolled ? "0" : "none")};
   left: 0;
-  background-color: ${({ scrolled }) =>
-    !scrolled ? "rgba(0, 6, 16, 0.518)" : "none"};
+  background-color: none;
 `;
-
+// ${({ scrolled }) =>
+//     !scrolled ? "rgba(0, 6, 16, 0.518)" : "none"}
 export const Cont = styled.div`
   display: flex;
   flex-direction: row;

@@ -1,10 +1,12 @@
 import React from "react";
+import MainSection from "./mainSection";
+import { Container } from "./style";
 
 const Home = () => {
   return (
-    <>
-      <h1 style={{ color: "white" }}>Here is the home page</h1>
-    </>
+    <Container>
+      <MainSection />
+    </Container>
   );
 };
 

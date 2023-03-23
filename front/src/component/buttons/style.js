@@ -4,7 +4,7 @@ export const Button = styled.button`
   width: ${({ width }) => width};
   border: 2px solid ${({ borderColor }) => borderColor || "white"};
   padding: ${({ padding }) => padding};
-  border-radius: 10px;
+  border-radius: 0.375rem;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -12,10 +12,11 @@ export const Button = styled.button`
   align-items: center;
   background-color: ${({ bcColor }) => bcColor};
   color: white;
+  margin-right: ${({ right }) => right || "20px"};
 
   &:hover {
     background-color: rgb(81 66 252);
-    border: none;
+    border: 2px solid rgb(81 66 252);
     cursor: pointer;
     transition: 0.3s;
   }

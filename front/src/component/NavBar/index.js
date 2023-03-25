@@ -29,7 +29,7 @@ const NavBar = () => {
   const handleScrolled = () => {
     const offset = window.scrollY;
 
-    if (offset > 200) {
+    if (offset > 50) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -65,7 +65,7 @@ const NavBar = () => {
                     to={e.to}
                     style={{
                       textDecoration: "none",
-                      color: "white",
+                      color: "#ffff",
                       marginRight: "5px",
                     }}
                   >

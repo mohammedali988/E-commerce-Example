@@ -3,22 +3,21 @@ import styled from "styled-components";
 export const NavContainer = styled.div`
   display: flex;
   flex-direction: row;
-  // align-items: center;
   justify-content: center;
   width: 100%;
   height: 70px;
-  position: ${({ scrolled }) => (scrolled ? "fixed" : "none")};
-  top: ${({ scrolled }) => (scrolled ? "0" : "none")};
+  position: fixed;
+  top: 0;
   left: 0;
-  background-color: none;
+  background-color: ${({ scrolled }) => (scrolled ? "rgba(29 33 68/ 0.7)" : "none")};
+  z-index: 50;
+  backdrop-filter: blur(6px);
 `;
-// ${({ scrolled }) =>
-//     !scrolled ? "rgba(0, 6, 16, 0.518)" : "none"}
+
 export const Cont = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  // align-items: center;
   width: 1320px;
 
   @media (max-width: 1319px) {
@@ -44,7 +43,6 @@ export const Logo = styled.div`
 export const NavAction = styled.div`
   display: flex;
   flex-direction: row;
-  // align-items: center;
   width: 60%;
 `;
 
@@ -74,7 +72,7 @@ export const NavOption = styled.div`
   color: white !important;
   align-items: center;
   justify-content: center;
-  opacity: ${({ active }) => (active ? "1" : "0.5")};
+  opacity: ${({ active }) => (active ? "1" : "0.6")};
   cursor: pointer;
 
   &: hover {

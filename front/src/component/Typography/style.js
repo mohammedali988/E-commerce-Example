@@ -31,4 +31,11 @@ export const Wrapper = styled.p`
   text-align: ${(props) => props?.["text-align"] || "left"};
   cursor: ${({ pointer }) => (pointer ? "pointer" : "")};
   opacity: ${({ opacity }) => opacity || "1"};
+
+  @media (max-width: 1315px) {
+    font-size: ${(props) => (props?.variant === "h1" ? "40px !important" : "")};
+  }
+  @media (max-width: 1140px) {
+    font-size: ${(props) => (props?.variant === "h1" ? "37px !important" : "")};
+  }
 `;

@@ -56,7 +56,7 @@ const MainSection = () => {
         </div>
       </Right>
       <Left>
-        <img src={HeroImg} alt="Main logo" />
+        <img src={HeroImg} alt="Main logo" style={{ width: "80%" }} />
       </Left>
     </MainCont>
   );

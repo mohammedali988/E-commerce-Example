@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
+import Footer from "../Footer";
 import NavBar from "../NavBar";
 import NavMobile from "../NavBar/navMobile";
 import { MainContainer } from "./style";
@@ -33,6 +34,7 @@ const Layout = () => {
       <MainContainer>
         <Outlet />
       </MainContainer>
+      <Footer />
     </div>
   );
 };

@@ -10,7 +10,7 @@ import ItemDetails from "./pages/ItemDetails";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />}></Route>
@@ -21,7 +21,7 @@ function App() {
           <Route path="itemDetails" element={<ItemDetails />}></Route>
         </Route>
       </Routes>
-    </>
+    </div>
   );
 }
 

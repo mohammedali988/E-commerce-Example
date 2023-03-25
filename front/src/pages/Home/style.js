@@ -7,7 +7,6 @@ export const Container = styled.div`
   align-items: center;
   width: 1320px;
   top: 70px;
-  position: fixed;
 
   @media (max-width: 1319px) {
     width: 1140px;
@@ -64,4 +63,25 @@ export const Left = styled.div`
     align-items: center;
     justify-content: center;
   }
+`;
+
+export const SliderCont = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
+  padding: 1px;
+`;
+
+export const SliderTitle = styled.div`
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 50px;
+`;
+
+export const SliderBody = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;

@@ -17,7 +17,12 @@ const IdentificationCard = () => {
         <Typo variant={"h2"} color={"white"} style={{ marginBlockEnd: 0 }}>
           @MohammedAli
         </Typo>
-        <Typo variant={"h4"} color={"rgb(54 179 126)"}>
+        <Typo
+          variant={"h3"}
+          color={"rgb(54 179 126)"}
+          weight={"600"}
+          style={{ marginBlockStart: ".3rem" }}
+        >
           14.55 ETH
         </Typo>
       </Info>

@@ -13,6 +13,7 @@ export const Button = styled.button`
   background-color: ${({ bcColor }) => bcColor};
   color: white;
   margin-right: ${({ right }) => right || "20px"};
+  height: ${({ height }) => height || "none"};
 
   &:hover {
     background-color: rgb(81 66 252);

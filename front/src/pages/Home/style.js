@@ -71,13 +71,29 @@ export const SliderCont = styled.div`
   width: 100%;
   margin-top: 100px;
   padding: 1px;
+
+  @media (max-width: 540px) {
+    width: 92%;
+  }
 `;
 
 export const SliderTitle = styled.div`
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.1);
   margin-bottom: 50px;
+  justify-content: space-between;
+`;
+
+export const LeftTitle = styled.div`
+  display: flex;
+`;
+
+export const RightTitle = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100px;
 `;
 
 export const SliderBody = styled.div`

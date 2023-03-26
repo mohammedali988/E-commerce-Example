@@ -1,11 +1,48 @@
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import IdentificationCard from "../../component/IdentificationCard";
-import { SliderBody, SliderCont, SliderTitle } from "./style";
+import Typo from "../../component/Typography";
+import {
+  LeftTitle,
+  RightTitle,
+  SliderBody,
+  SliderCont,
+  SliderTitle,
+} from "./style";
+import { Button } from "../../component/buttons/style";
 
 const CreatorSlider = () => {
   return (
     <SliderCont>
-      <SliderTitle></SliderTitle>
+      <SliderTitle>
+        <LeftTitle>
+          <Typo variant={"h1"} color={"#ffff"} weight={"800"}>
+            Top Artist
+          </Typo>
+        </LeftTitle>
+        <RightTitle>
+          <Button
+            width={"40px"}
+            padding={"5px"}
+            bcColor={"rgba(255, 255, 255, 0.05)"}
+            borderColor={"rgba(229, 231, 235, 0.1)"}
+            height={"40px"}
+          >
+            <FontAwesomeIcon icon={faArrowRight} rotation={180} />
+          </Button>
+          <Button
+            width={"40px"}
+            padding={"5px"}
+            right={"0px"}
+            bcColor={"rgba(255, 255, 255, 0.05)"}
+            borderColor={"rgba(229, 231, 235, 0.1)"}
+            height={"40px"}
+          >
+            <FontAwesomeIcon icon={faArrowRight} />
+          </Button>
+        </RightTitle>
+      </SliderTitle>
       <SliderBody>
         <IdentificationCard />
         <IdentificationCard />

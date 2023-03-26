@@ -10,7 +10,7 @@ import {
   SectionsTitle,
 } from "./style";
 
-const LiveSection = () => {
+const TodaysPicks = () => {
   return (
     <SectionsCont>
       <SectionsTitle>
@@ -21,7 +21,7 @@ const LiveSection = () => {
             fontSize={"1.875rem"}
             weight={"800"}
           >
-            Live Auctions
+            Today's Picks
           </Typo>
         </LeftTitle>
         <RightTitle>
@@ -43,13 +43,17 @@ const LiveSection = () => {
         </RightTitle>
       </SectionsTitle>
       <SectionsBody wrap={"wrap"}>
-        <Card live={true} />
-        <Card live={true} />
-        <Card live={true} />
-        <Card live={true} />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </SectionsBody>
     </SectionsCont>
   );
 };
 
-export default LiveSection;
+export default TodaysPicks;

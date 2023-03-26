@@ -87,3 +87,25 @@ export const Timer = styled.div`
   font-size: 1rem;
   line-height: 1.5rem;
 `;
+
+export const CardAction = styled.div`
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgb(77 76 90);
+  padding-top: 1.25rem;
+  background-color: none;
+  width: 100%;
+`;
+
+export const View = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.25rem;
+  color: white;
+
+  & :hover {
+    cursor: pointer;
+    color: blue !important;
+  }
+`;

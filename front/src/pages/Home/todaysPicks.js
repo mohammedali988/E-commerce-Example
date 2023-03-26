@@ -4,6 +4,7 @@ import Card from "../../component/Card/Card";
 import Typo from "../../component/Typography";
 import {
   LeftTitle,
+  LoadMoreCont,
   RightTitle,
   SectionsBody,
   SectionsCont,
@@ -52,6 +53,18 @@ const TodaysPicks = () => {
         <Card />
         <Card />
       </SectionsBody>
+      <LoadMoreCont>
+        <Button padding={"0.75rem 1.75rem"} bcColor={"rgb(20 20 32)"}>
+          <Typo
+            fontSize={"1rem"}
+            weight={"600"}
+            height={"1.5rem"}
+            style={{ marginBlock: "0px" }}
+          >
+            Load More...
+          </Typo>
+        </Button>
+      </LoadMoreCont>
     </SectionsCont>
   );
 };

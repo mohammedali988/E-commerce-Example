@@ -103,3 +103,11 @@ export const SectionsBody = styled.div`
   justify-content: space-between;
   flex-wrap: ${({ wrap }) => wrap || ""};
 `;
+
+export const LoadMoreCont = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+`;

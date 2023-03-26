@@ -1,5 +1,6 @@
 import React from "react";
 import CreatorSlider from "./creatorSlider";
+import LiveSection from "./liveSection";
 import MainSection from "./mainSection";
 import { Container } from "./style";
 
@@ -8,6 +9,7 @@ const Home = () => {
     <Container>
       <MainSection />
       <CreatorSlider />
+      <LiveSection />
     </Container>
   );
 };

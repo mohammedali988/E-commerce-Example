@@ -65,7 +65,7 @@ export const Left = styled.div`
   }
 `;
 
-export const SliderCont = styled.div`
+export const SectionsCont = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -77,7 +77,7 @@ export const SliderCont = styled.div`
   }
 `;
 
-export const SliderTitle = styled.div`
+export const SectionsTitle = styled.div`
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid rgba(229, 231, 235, 0.1);
@@ -93,11 +93,13 @@ export const RightTitle = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100px;
+  width: 150px;
+  justify-content: flex-end;
 `;
 
-export const SliderBody = styled.div`
+export const SectionsBody = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: ${({ wrap }) => wrap || ""};
 `;

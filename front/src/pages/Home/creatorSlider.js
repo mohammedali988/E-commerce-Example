@@ -1,23 +1,28 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import IdentificationCard from "../../component/IdentificationCard";
+import IdentificationCard from "../../component/Card/IdentificationCard";
 import Typo from "../../component/Typography";
 import {
   LeftTitle,
   RightTitle,
-  SliderBody,
-  SliderCont,
-  SliderTitle,
+  SectionsBody,
+  SectionsTitle,
+  SectionsCont,
 } from "./style";
 import { Button } from "../../component/buttons/style";
 
 const CreatorSlider = () => {
   return (
-    <SliderCont>
-      <SliderTitle>
+    <SectionsCont>
+      <SectionsTitle>
         <LeftTitle>
-          <Typo variant={"h1"} color={"#ffff"} weight={"800"}>
+          <Typo
+            variant={"h1"}
+            color={"#ffff"}
+            fontSize={"1.875rem"}
+            weight={"800"}
+          >
             Top Artist
           </Typo>
         </LeftTitle>
@@ -42,14 +47,14 @@ const CreatorSlider = () => {
             <FontAwesomeIcon icon={faArrowRight} />
           </Button>
         </RightTitle>
-      </SliderTitle>
-      <SliderBody>
+      </SectionsTitle>
+      <SectionsBody>
         <IdentificationCard />
         <IdentificationCard />
         <IdentificationCard />
         <IdentificationCard />
-      </SliderBody>
-    </SliderCont>
+      </SectionsBody>
+    </SectionsCont>
   );
 };
 

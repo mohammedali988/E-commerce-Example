@@ -1,4 +1,5 @@
 import React from "react";
+import CoreFeatures from "./coreFeatures";
 import CreatorSlider from "./creatorSlider";
 import LiveSection from "./liveSection";
 import MainSection from "./mainSection";
@@ -12,6 +13,7 @@ const Home = () => {
       <CreatorSlider />
       <LiveSection />
       <TodaysPicks />
+      <CoreFeatures />
     </Container>
   );
 };

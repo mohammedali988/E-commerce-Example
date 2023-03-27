@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const CardCont = styled.div`
   display: flex;
   flex-direction: ${({ direction }) => direction || "row"};
-  padding: 1rem;
+  padding: ${({ pad }) => pad || "1rem"};
   border-radius: 0.75rem;
   border: 2px solid rgba(229, 231, 235, 0.2);
   background-color: rgb(44 44 57);
-  align-items: center;
+  align-items: ${({ align }) => align || "center"};
   width: 24%;
   margin-bottom: ${({ maBottom }) => maBottom || ""};
 

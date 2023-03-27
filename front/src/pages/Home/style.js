@@ -111,3 +111,21 @@ export const LoadMoreCont = styled.div`
   justify-content: center;
   padding-top: 2rem;
 `;
+
+//////////////////////////////////////////Core features
+
+export const CoreSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+  width: 100%;
+`;
+
+export const CoreCardCont = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+`;

@@ -5,7 +5,12 @@ import { CardCont } from "./style";
 
 const CoreCard = () => {
   return (
-    <CardCont direction="column" align={"start"} pad={"1.75rem"}>
+    <CardCont
+      direction="column"
+      align={"start"}
+      pad={"1.75rem"}
+      maBottom={"2.5rem"}
+    >
       <IconCont>
         <svg
           width="34"

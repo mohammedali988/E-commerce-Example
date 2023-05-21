@@ -100,7 +100,7 @@ export const RightTitle = styled.div`
 export const SectionsBody = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 30px;
   flex-wrap: ${({ wrap }) => wrap || ""};
 `;
 
@@ -128,4 +128,5 @@ export const CoreCardCont = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 `;

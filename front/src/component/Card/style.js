@@ -8,7 +8,7 @@ export const CardCont = styled.div`
   border: 2px solid rgba(229, 231, 235, 0.2);
   background-color: rgb(44 44 57);
   align-items: ${({ align }) => align || "center"};
-  width: 24%;
+  width: ${({ width }) => width || "23%"};
   margin-bottom: ${({ maBottom }) => maBottom || ""};
 
   @media (max-width: 1315px) {
@@ -29,7 +29,7 @@ export const CardCont = styled.div`
 
 export const ImgCont = styled.div`
   display: flex;
-  height: ${({ height }) => height || "80px"};
+  height: ${({ height }) => height || "75px"};
   border-radius: 0.75rem;
   margin-right: ${({ MaRight }) => MaRight || "20px"};
   min-width: 32px;
@@ -108,4 +108,34 @@ export const View = styled.div`
     cursor: pointer;
     color: blue !important;
   }
+`;
+
+export const ImageCont = styled.div`
+  display:flex;
+  flex-wrap
+`;
+
+export const ImageResp = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+`;
+
+export const ImageResCont = styled.li`
+  cursor: pointer;
+  height: 300px;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 5px;
+  flex: 1 1 auto;
+  width: 10px;
+`;
+
+export const Img = styled.img`
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
 `;
